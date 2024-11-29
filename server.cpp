@@ -159,7 +159,7 @@ void alterClock() {
 
 int main() {
     then = std::chrono::high_resolution_clock::now();
-    std::thread(alterClock).detach();
+    // std::thread(alterClock).detach();
     establishSocket();
     // Accept client connections
     while (true) {
